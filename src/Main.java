@@ -1,13 +1,11 @@
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+/*-----------------------------------------------------------------------------------------------------------*/
+//          Developer 1: Kunal Buty                                                                          //
+/*-----------------------------------------------------------------------------------------------------------*/
+
 
 public class Main {
-    public static void main (String[] args) throws SQLException {
-        int[][] data=new int[5][3];
-        DB.getData(5,1,data);
-        for(int i=0;i<5;i++) {
-            System.out.println(data[i][0] + " " +data[i][1] + " " +data[i][2] + " ");
-        }
+    public static void main (String[] args) {
+        GUI gui=new GUI();
+        gui.launchGUI(args);
     }
 }
