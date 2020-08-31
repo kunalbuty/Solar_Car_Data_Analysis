@@ -64,5 +64,16 @@ public class GUI extends Application implements Initializable {
 
     }
 
+    public void refresh() {
+        //this function is triggered when a certain button is clicked (check fxml file to see which one)
+        //Code below shows how to add a graph to the GUI.
+
+        /*
+        LineChart<Number,Number> batteryTempGraph;
+        batteryTempGraph = Graph.getChart(5,"batteryTemp");
+        col1.getChildren().add(batteryTempGraph);
+        */
+    }
+
 
 }

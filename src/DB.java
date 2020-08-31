@@ -64,7 +64,7 @@ public class DB {
         String query = "SELECT Battery_Temperature,Battery_Voltage_Out,Speed,Battery_Charge From Telemetry WHERE Drive_Number =" + driveNum +" LIMIT " + numRows +";";
         ResultSet rs = stmt.executeQuery(query);
         int i=0;
-        while( rs.next()) {
+        while(rs.next()) {
             results[i][0]=rs.getInt("Battery_Temperature");
             results[i][1]=rs.getInt("Battery_Voltage_Out");
             results[i][2]=rs.getInt("Speed");

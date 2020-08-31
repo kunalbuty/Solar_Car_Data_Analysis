@@ -43,7 +43,6 @@ public class Graph {
             column=3;       //col 3 holds battery charge data (from DB.getData)
             title="Battery Charge";
             yAxisTitle="Charge (%)";
-
         }
 
         //set up axes and title
@@ -62,7 +61,7 @@ public class Graph {
         try {
             int[][] data=new int[numPoints][4];
             //Note DriveNum is hardcoded to 1 here
-            DB.getData(10,1,data);
+            DB.getData(numPoints,1,data);
             for(int i=0;i<numPoints;i++) {
                 graphData.getData().add(new XYChart.Data<>(i,data[i][column]));
                 System.out.println(data[i][0]);
